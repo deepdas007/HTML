@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEW ACCOUNT</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="login_connection.php" class="box" method="post" onsubmit="return validate2();">
+		<input type="text" name="First" id="First" placeholder="Enter your first name" required>
+		<br><br>
+		<input type="text" name="Last" id="Last" placeholder="Enter you last name" required>
+		<br><br>
+		<input type="tel" name="Phone" id="Phone" data-mask="0000000000" placeholder="Mobile Number" required>
+		<br><br>
+		<input type="email" name="Username" id="Username" placeholder="Username" required>
+		<br><br>
+		<input type="password" name="password" id="password" placeholder="Password" required>
+		<br><br>
+		<input type="password" name="Confirm" id="Confirm" placeholder="Confirm Password" required>
+		<br><br>
+		<button type="submit" class="box1">create account</button>
+	</form>
+
+	<script type="text/javascript">
+		function validate2()
+		{
+			var mobile = document.getElementById('Phone').value;
+			var password = document.getElementById('password').value;
+			var Confirm = document.getElementById('Confirm').value;
+			
+			if(password != Confirm)
+			{
+				alert('Password should be same');
+				return false;
+			}
+
+			else if (isNaN(mobile)) 
+			{
+				alert('Enter only numeric values in Mobile number');
+				return false;
+			}
+
+			else if (mobile.length < 10) 
+			{
+				alert('Please enter 10 digits only');
+				return false;
+			}
+
+			else if (mobile.length > 10) 
+			{
+				alert('Please enter 10 digits only');
+				return false;
+			}
+
+			else
+			{
+				return true;
+			}
+		}
+	</script>
+
+</body>
+</html>

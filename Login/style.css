@@ -1,0 +1,108 @@
+*
+{
+	outline: none;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url(csgo2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box
+{
+	width: 18.75rem;
+	padding: 2.5rem;
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px solid #000000;
+	border-radius: 30px;                /*top color*/   /*bottom color*/ 
+	background: linear-gradient(to bottom,#0C0A3E -90%, #001514 100%);
+	text-align: center;
+	background-size: cover;
+}
+
+.one
+{
+	text-decoration: none;
+	color: #0dc2e2;
+}
+
+.one:hover
+{
+	color: #17ef1f;
+}
+
+::placeholder
+{
+	color: #b7b7b7;
+}
+
+.box input[type="email"],.box input[type="password"],.box input[type="tel"],.box input[type="text"],.box input[type="number"]
+{
+	background: transparent;
+	display: flex;
+	margin: 2px auto;
+	text-align: center;
+	border: 2px solid #000000;
+	padding: 0.875rem 0.625rem;
+	width: 12.5rem;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+
+.box input[type="email"]:focus,.box input[type="password"]:focus,.box input[type="text"]:focus,.box input[type="tel"]:focus
+{
+	width: 17.5rem;
+	border-color: #2ecc71;
+}
+
+.box input[type="checkbox"]
+{
+	cursor: pointer;
+}
+	
+span
+{
+	color: #4f4f4f;
+	font-size: 0.9rem; 
+}
+
+.box1
+{
+	background: transparent;
+	display: block;
+	margin: 1rem auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 0.875rem 0.625rem;
+	justify-content: space-around;
+	width: 10.375rem;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 0.9375rem;
+	transition-duration: .30s;
+
+}
+
+.box1:hover
+{
+	width: 14.375rem;
+	color: #ffffff;
+	background: #007fff;
+	border-color: #000000;
+	box-shadow: 0 0 20px #0dc2e2;
+	font-size: 15px;
+	font-family: sans-serif;
+	letter-spacing: 4px;
+}
