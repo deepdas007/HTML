@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+	<div class="outer-box">
+		<center>
+			<h1>Shopping Cart</h1>
+			<br>
+			<div class="image">
+				<a href="#">
+					<img src="cod.jpg" alt="Call of duty Modern Warfare" width="250px">
+					<span>Call of Duty Modern Warfare</span>
+				</a>
+			</div>
+			<br><br>
+			<span>Price: Rs. 3000</span>
+			<br><br>
+			<span>Quantity: </span>
+			<input type="text" id="qty" name="" value="0">
+			<br><br>
+			<button onclick="calculatePrice()" type="button">Proceed to Checkout</button>
+			<br><br>
+			<span>Grand Total: Rs. </span><span id="total"></span>
+		</center>
+	</div>
+</body>
+
+<script type="text/javascript">
+	function calculatePrice()
+	{
+		var qty = document.getElementById('qty');
+		var qty1 = qty.value;
+		var qty2 = parseInt(qty1);
+
+		if(isNaN(qty2))
+		{
+			alert("Please enter only numeric values");
+			return;
+		}
+
+		if(qty2 < 0)
+		{
+			alert("Please select a valid Quantity");
+			return;
+		}
+
+		else if (qty1 == 0) 
+		{
+			alert("Quantity cannot be 0");
+			return;
+		}
+
+		var price = 3000.00;
+		var taxrate = 0.18;
+		var total = (qty2 * price) + (taxrate * price);
+		var output = document.getElementById("total");
+
+		output.innerText = total;
+	}
+</script>
+</html>
