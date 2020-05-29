@@ -1,0 +1,85 @@
+/*---------------------SETS THE BACKGROUND COLOR AND THE FONT---------------------*/
+body
+{
+	background: linear-gradient(to top, #30cfd0, #330867);
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	height: 97.9vh;
+	font-family: 'Nunito';
+}
+
+/*----------------CREATES A BOX AROUND THE TEXT BOXES AND OTHER CONTENTS----------------*/
+.outer-box
+{
+	margin-left: 40%;
+	display: inline-flex;
+	margin-top: 7%;
+	padding: 50px;
+	border: 2px solid #000;
+	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	border-radius: 15px;
+}
+
+/*-----------PROVIDES STYLING TO THE TEXT BOX-----------*/
+.outer-box input[type="text"]
+{
+	width: 20px;
+	text-align: center;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+/*--------------PROVIDES SYLING TO THE BUTTON--------------*/
+.outer-box button[type="button"]
+{
+	width: 200px;
+	height: 40px;
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	background-size: 200% 100%;
+	border: 2px solid #191919;
+	font-size: 17px;
+	background-position: right bottom;
+	border-radius: 25px;
+	transition: 300ms ease;
+	cursor: pointer;
+	outline: none;
+}
+
+/*-------------------PROVIDES HOVER EFFECT OF THE BUTTON-------------------	*/
+.outer-box button[type="button"]:hover
+{
+	background-position: left bottom;
+	letter-spacing: 2px;
+	width: 250px;
+}
+
+.image
+{
+	background-size: cover;
+	box-sizing: border-box;
+	transition: 200ms ease;
+}
+
+.image img
+{
+	display: flex;
+	border-radius: 10px;
+	background: transparent;
+	background-size: cover;
+}
+
+.image:hover
+{
+	transform: scale(1.03);
+	box-shadow: 0 0 25px #19ea0e, 0 0 25px #19ea0e, 0 0 25px #19ea0e;
+	border-radius: 10px;
+}
+
+.image a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: 1000;
+}
