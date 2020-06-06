@@ -1,0 +1,178 @@
+body
+{
+	margin:0;
+	padding: 0;
+	background-color: white;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+	/*padding: 15.625rem 0 12.5rem;*/
+}
+
+/*NAVBAR INDEXING AND WIDTH*/
+header
+{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+}
+
+/*SPACES BETWEEN THEM*/
+.navbar
+{
+	padding: 1.25rem 0;
+}
+
+/*LOGO SETTINGS*/
+.navbar-brand
+{
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+/*ANCHORS IN THE LINKS*/
+.nav-item
+{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+/*COLORS OF THE NAVBAR ANCHORS*/
+.navbar-light .navbar-nav .nav-item.active .nav-link
+{
+	background: #00bbff;
+	color: #fff;
+	border-radius: 20px;
+}
+
+/*HOVER EFFECTS IN NAVBAR*/
+.navbar-light .navbar-nav .nav-item .nav-link:hover
+{
+	background: #00bbff;
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+	border-radius: 20px;
+	color: #000;
+	padding: 5px 15px;
+	transition: 0.3s ease-out;
+}
+
+.main-section
+{
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+
+.modal-content
+{
+	background-color: #434e5a;
+	opacity: 0.8;
+	padding: 0 18px;
+}
+
+.user-img img
+{
+	height: 120px;
+	width: 120px;
+}
+
+.user-img
+{
+	margin-top: -60px;
+	margin-bottom: 45px;
+}
+
+.form-group
+{
+	margin-bottom: 25px;
+}
+
+.form-group input
+{
+	margin: 10px 0;
+	height: 42px;
+	border-radius: 5px;
+	border: 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	padding-left: 54px;
+}
+
+.form-group i
+{
+	content: "\f007";
+	position: absolute;
+	font-size: 22px;
+	left: 28px;
+	padding-top: 8px;l
+}
+
+.form-input form
+{
+	margin-top: 50px;
+}
+
+
+.form-input button
+{
+	width: 40%;
+	margin: 5px 0 25px;
+}
+
+.btn-success
+{
+	background-color: #1c6288;
+	font-size: 19px;
+	border-radius: 5px;
+	padding: 7px 14px;
+	border: 1px solid #daf1ff;
+}
+
+.btn-success:hover
+{
+	background-color: #13445e;
+	border: 1px solid #daf1ff;
+}
+
+.modal-content .sign .btn-success.disabled
+{
+	background: white;
+	color: black;
+	outline: none;
+	border: none;
+	cursor: auto;
+	margin-right: -5px;
+}
+
+.modal-content .sign .btn-success.disabled:hover
+{
+	background: white;
+}
+
+.forgot
+{
+	padding: 5px 0 25px;
+}
+
+.forgot a
+{
+	color: #daf1ff;
+}
+
+.forgot p
+{
+	margin-top: -10px;
+	color: #daf1ff;
+}
+
+.modal-content .sign p
+{
+	margin-top: 10px;
+	color: white;
+}
