@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/login_style.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand" href="#" style="color: #00bbff;">LOGO</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-lg-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">News</a></li>
+						<li class="nav-item active"><a class="nav-link" href="#">Login/Sign up <span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="modal-dialog text-center">
+		<div class="col-sm-9 main-section">
+			<div class="modal-content">
+				<div class="col-12 form-input">
+					<form>
+						<div class="form-group">
+							<i class="fas fa-user"></i>
+							<input type="email" name="" class="form-control" placeholder="Username">
+							<i class="fas fa-lock"></i>
+							<input type="password" name="" class="form-control" placeholder="Password">
+						</div>
+						<button type="submit" class="btn btn-success">Login</button>
+					</form>
+				</div>
+				<div class="col-sm-12 forgot">	
+					<a href="#">Forgot Password?</a>
+				</div>
+				<div class="col-sm-12 forgot">
+					<a href="#"> Create a new Account</a>
+				</div>
+				<div class="col-sm-12 sign">
+					<button class="btn btn-success disabled" tabindex="-1" aria-disabled="true"><span><i class="fab fa-google"></i></span></button>
+					<button class="btn btn-success">Sign up using Google</button>
+					<p>OR</p>
+					<button class="btn btn-success disabled" aria-disabled="true"><span><i class="fab fa-facebook-f"></i></span></button>
+					<button class="btn btn-success fb">Sign up using Facebook</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
