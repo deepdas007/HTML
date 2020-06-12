@@ -1,0 +1,209 @@
+/*NAVBAR INDEXING AND WIDTH*/
+header
+{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+}
+
+/*SPACES BETWEEN THEM*/
+.navbar
+{
+	padding: 1.25rem 0;
+}
+
+/*LOGO SETTINGS*/
+.navbar-brand
+{
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 2em;
+}
+
+/*ANCHORS IN THE LINKS*/
+.nav-item
+{
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+/*COLORS OF THE NAVBAR ANCHORS*/
+.navbar-light .navbar-nav .nav-item.active .nav-link
+{
+	background: #00bbff;
+	border-radius: 20px;
+	color: #fff;
+}
+
+/*HOVER EFFECTS IN NAVBAR*/
+.navbar-light .navbar-nav .nav-item .nav-link:hover
+{
+	background: #00bbff;
+	color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link
+{
+	border-radius: 20px;
+	color: #000;
+	padding: 5px 15px;
+	transition: 0.3s ease-out;
+}
+
+.main-buttons .container .row .meet, .main-buttons .container .row .host
+{
+	margin-top: 100%;
+}
+
+.main-buttons .container .row .schedule
+{
+	margin-top: 2%;
+}
+
+/*BUTTONS STYLINGS*/
+.main-buttons .row .btn-block
+{
+	border-radius: 100px;
+	height: 100px;
+	outline: none;
+}
+
+/*JOIN BUTTON STYLING*/
+.main-buttons .row .btn-primary
+{
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	background: #00bbff;
+	border: 3px solid #0083ff;
+	transition: 0.25s ease-out;
+	font-weight: 450;
+}
+
+/*JOIN BUTTON HOVER EFFECTS*/
+.main-buttons .row .btn-primary:hover
+{
+	background: #00aeff;
+	transform: scale(1.03);
+}
+
+
+/*HOST BUTTON STYLING*/
+.main-buttons .row .btn-success
+{
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	background-color: #00bbff;
+    border: 3px solid #00e034;
+    font-weight: 450;
+    transition: 0.25s ease-out
+}
+
+.main-buttons .row .btn-success:hover
+{
+	background: #0fd64f;
+	transform: scale(1.03);
+}
+
+/*SCHEDULE BUTTON STYLING*/
+.main-buttons .row .btn-light
+{
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	background: #00bbff;
+	border: 3px solid black;
+	transition: 0.25s ease-out;
+	font-weight: 450;
+}
+
+.main-buttons .row .btn-light:hover
+{
+	background: black;
+	color: white;
+	transform: scale(1.03);
+}
+
+/*BUTTONS ICONS*/
+.main-buttons .row .btn-primary span,
+.main-buttons .row .btn-success span,
+.main-buttons .row .btn-light span
+{
+	float: left;
+	margin-left: 40px;
+}
+
+
+/*BUTTONS TEXT*/
+.main-buttons .row .btn-primary .join, .banner .main-buttons .row .btn-success .host
+{
+	align-content: center;
+	text-align: center;
+	align-items: center;
+	margin-left: 25%;
+	top: 50%;
+}
+
+/*SCHEDULE BUTTON TEXT*/
+.main-buttons .row .btn-light .schedule
+{
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	margin-left: 36%;
+}
+
+/*"Read More" BUTTON STYLING*/
+.btnD1
+{
+	display: inline-block;
+	margin: 1em 0 0;
+	padding: 10px 20px;
+	background: #00bbff;
+	border-radius: 5px;
+	color: #000;
+	text-transform: uppercase;
+	border: none;
+	font-weight: 750;
+	transition: 0.2s;  
+}
+
+/*HOVER EFFECTS*/
+.btnD1:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar-light .navbar-toggler
+{
+	border: none;
+	outline: none;
+	color: #fff;
+	transition: 0.3s;
+}
+
+/*TO ADJUST THE PADDINGS AND FONTS WHEN SCREEN SIZE IS REDUCED*/
+@media (max-width: 991px)
+{
+	.main-buttons .container .row button
+	{
+		font-size: 15px;
+		margin: 10px;
+		align-items: center;
+		text-align: center;
+		align-content: center;
+	}
+
+	header .container-fluid .navbar-collapse .nav-item
+	{
+		margin: 5px 0;
+	}
+
+	header .container-fluid .navbar-brand
+	{
+		margin-right: 250px;
+	}
+}
